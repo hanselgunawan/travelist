@@ -451,3 +451,9 @@ a.button2:hover {
     }
 
 }
+
+/* SEMANTIC UI SEARCH */
+.ui.category.search .results
+{
+    width: 100% !important;
+}
