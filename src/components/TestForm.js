@@ -18,7 +18,7 @@ let shareStyle = {
     marginTop:20
 };
 
-const TestForm = () =>
+const TestForm = props =>
     <div>
         <div className="row">
             <div className="col-lg-4">
@@ -62,6 +62,9 @@ const TestForm = () =>
                                     icon='edit'
                                     placeholder='List Title'
                                     fluid='true'
+                                    name='listTitle'
+                                    value={props.listTitle}
+                                    onChange={props.handleInputChange}
                                 />
                             </span></h3>
                         </header>
@@ -69,6 +72,9 @@ const TestForm = () =>
                             <Form>
                                 <TextArea
                                     autoHeight
+                                    name="listDesc"
+                                    value={props.listDesc}
+                                    onChange={props.handleInputChange}
                                     icon="edit"
                                     placeholder='Description'
                                 />
